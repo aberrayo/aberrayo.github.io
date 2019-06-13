@@ -1,14 +1,325 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <title>Example</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-      <link href="assets/styles/main.css"rel="stylesheet" type="text/css">
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body class="container-fluid">
-      <h1> Portfolio Template </h1>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Full Stack Web Developer Portfolio for Yonas Aberra in Boston, MA">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Ruby on Rails, Web Developer, Boston, MA">
+    <meta name="author" content="Yonas Aberra">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons.ico/favicon-16x16.png">
+    <link rel="manifest" href="favicons.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Yonas Aberra</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> -->
+    <link rel="stylesheet" href="vendor/devicon.min.css">
+    <script src="https://use.fontawesome.com/5cccc75d9f.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Yonas.Aberra</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">skills.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">projects.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">resume.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact.</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="intro-header">
+      <div class="container">
+        <div class="intro-message">
+          <h1>Yonas Aberra</h1>
+          <h3>Full Stack Web Developer</h3>
+          <hr class="intro-divider">
+          <ul class="list-inline intro-social-buttons">
+            <li class="list-inline-item">
+              <a href="https://github.com/aberrayo" class="btn btn-success btn-lg">
+                <i class="fa fa-github fa-fw"></i>
+                <span class="network-name">Github</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/yonas-aberra/" class="btn btn-success btn-lg">
+                <i class="fa fa-linkedin fa-fw"></i>
+                <span class="network-name">Linkedin</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="content-section-a" id="about">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">About Me</h2>
+            <p class="lead">I am a full stack web developer with a background in Civil Engineering. I want to make ideas, concepts and dreams come to life on the web. I enjoy challenges that push me to solve problems in innovative ways. I strive for efficiency and ways to make life just a bit easier with help from the web.</p>
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <img class="img-fluid" src="https://i.imgur.com/xoSmd5U.jpg" alt="profile-pic">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section class="content-section-b" id="skills">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-5 ml-auto order-lg-1">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Skills</h2>
+          </div>
+          <div class="col-lg-5 mr-auto order-lg-2">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-9 ml-auto skills-icons">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-jquery-plain-wordmark colored"></i>
+            <i class="devicon-nodejs-plain-wordmark colored"></i>
+            <i class="devicon-express-original-wordmark colored"></i>
+            <i class="devicon-ruby-plain-wordmark colored"></i>
+            <i class="devicon-rails-plain-wordmark colored"></i>
+            <i class="devicon-postgresql-plain-wordmark colored"></i>
+            <i class="devicon-handlebars-plain-wordmark colored"></i>
+            <i class="devicon-python-plain-wordmark colored"></i>
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+            <i class="devicon-ember-original-wordmark colored"></i>
+            <i class="devicon-git-plain-wordmark colored"></i>
+            <i class="devicon-github-plain-wordmark colored"></i>
+          </div>
+          <div class="mr-auto">
+          </div>
+        </div>
+
+
+
+      </div>
+      <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-b -->
+
+    <section class="content-section-a" id="projects">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Projects</h2>
+          </div>
+          <div class="col-lg-5 mr-auto">
+          </div>
+        </div>
+        <div class="row project-spacer">
+          <div class="col-lg-5 ml-auto">
+              <a href="https://aberrayo.github.io/project4-client/#/"><img class="img-fluid" src="https://i.imgur.com/gzlAMbD.png" alt="MovieLibrary"></a>
+              <p class="project-description"><b>1. MovieLibrary:</b> An application for users to create a Movie Library, it will eventually also allow users to acess a link to their database and watch movies directly. This is a full stack project built using the React.js, and JavaScript front end framework, and MongoDB/Mongoose for the API.
+              <br><a href="https://aberrayo.github.io/project4-client/#/">MovieLibrary Demo</a>
+              <br><a href="https://github.com/aberrayo/project4-api">MovieLibrary Back-End Github Repository</a>
+              <br><a href="https://github.com/aberrayo/project4-client">MovieLibrary Front-End Github Repository</a></p>
+            </div>
+            <div class="col-lg-5 mr-auto">
+              <a href="https://aberrayo.github.io/hikes-client/"><img class="img-fluid" src="https://i.imgur.com/JgdAwTK.png" alt="Hikers Log"></a>
+              <p class="project-description"><b>2. Hikers Log:</b> A single page application that uses HTML, CSS, JavaScript, and Handlebars for the front-end, and Ruby On Rails for the back-end. Hikers Log allows users to log the hikes they completed; miles, time, and trail-name. It will will include a GPS component, a trail search options, and other hiker friendly feedbacks in future iteration.
+              <br><a href="https://aberrayo.github.io/hikes-client/">Hikers Log Demo</a>
+              <br><a href="https://github.com/aberrayo/Hikes-api">Hikers Log Back-End Github Repository</a>
+              <br><a href="https://github.com/aberrayo/hikes-client">Hikers Log Front-End Github Repository</a>
+              </p>
+            </div>
+          </div>
+        <div class="row project-spacer">
+          <div class="col-lg-5 ml-auto">
+            <a href="https://pages.git.generalassemb.ly/peanuts/group-project-client/"><img class="img-fluid" src="https://i.imgur.com/9cLZ8ap.png" alt="Bucket List"></a>
+            <p class="project-description"><b>3. Bucket List:</b> A full stack project built using Express.js / MongoDB for the API and JavaScript, HTML and CSS for the client side. A single page web application that allows users to save, track and retrieve their list of tasks. It has full user authentication and gives user full CRUD functions.
+            <br><a href="https://pages.git.generalassemb.ly/peanuts/group-project-client/">Bucket List Demo</a>
+            <br><a href="https://git.generalassemb.ly/peanuts/group-project-api">Bucket List Back-End Github Repository</a>
+            <br><a href="https://git.generalassemb.ly/peanuts/group-project-client">Bucket List Front-End Github Repository</a>
+            </p>
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <a href="https://aberrayo.github.io/myTic-Tac-Toe_Yonas/"><img class="img-fluid" src="https://i.imgur.com/fwakslY.png" alt="Tic-Tac-Toe"></a>
+            <p class="project-description"><b>4. Tic-Tac-Toe:</b> A single page application that utilizes a third party API to save and get game statistics. It has full user authentication, and allows a user to play rounds of Tic-Tac-Toe with a friend.
+            <br><a href="https://aberrayo.github.io/myTic-Tac-Toe_Yonas/">Tic-Tac-Toe Demo</a>
+            <br><a href="https://github.com/aberrayo/myTic-Tac-Toe_Yonas">Tic-Tac-Toe Front-End Github Repository</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-a -->
+
+    <section class="content-section-b" id="resume">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Resume</h2>
+          </div>
+          <div class="col-lg-5 mr-auto">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+          <div class="resume-link">
+            <embed src="YonasAberraSecondDraftResume.pdf" type="application/pdf" width="500px" height="500px" class="resume-link">
+            <p class="lead resume-link"><a href="YonasAberraSecondDraftResume.pdf">Click here to download</a></p>
+          </div>
+          </div>
+          <div class="mr-auto"></div>
+        </div>
+
+        </div>
+      <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-b -->
+
+    <aside class="banner">
+
+      <div class="container" id="contact">
+
+        <div class="row">
+          <div class="col-lg-6 my-auto">
+            <h2>Contact</h2>
+          </div>
+          <div class="col-lg-6 my-auto">
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/aberrayo" class="btn btn-success btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/yonas-aberra/" class="btn btn-success btn-lg">
+                  <i class="fa fa-linkedin fa-fw"></i>
+                  <span class="network-name">Linked In</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:aberrayo@gmail.com" class="btn btn-success btn-lg">
+                  <i class="fa fa-envelope-o fa-fw"></i>
+                  <span class="network-name">Email</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+
+    </aside>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#resume">Resume</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <p class="copyright text-muted small">Copyright &copy; Yonas Aberra 2019. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
 </html>
