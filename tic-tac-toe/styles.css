@@ -1,0 +1,98 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #22d3ee;
+  --x: #60a5fa;
+  --o: #f472b6;
+  --win: #10b981;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: linear-gradient(180deg, #0b1022, var(--bg));
+  color: var(--text);
+  display: grid;
+  place-items: center;
+}
+
+.app { 
+  width: min(680px, 92vw);
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+h1 { 
+  margin: 0 0 12px; 
+  font-weight: 700; 
+  letter-spacing: 0.4px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+#resetBtn {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+#resetBtn:hover { border-color: rgba(255,255,255,0.3); }
+
+#status { color: var(--muted); }
+
+.board {
+  --size: min(540px, 90vw);
+  width: var(--size);
+  height: var(--size);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin: 10px auto 18px;
+}
+
+.cell {
+  display: grid;
+  place-items: center;
+  font-size: clamp(48px, 10vmin, 96px);
+  font-weight: 800;
+  line-height: 1;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+  cursor: pointer;
+  user-select: none;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+.cell:hover { 
+  transform: translateY(-1px); 
+  border-color: rgba(255,255,255,0.18);
+}
+.cell.x { color: var(--x); }
+.cell.o { color: var(--o); }
+.cell.win { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.5); }
+.cell[aria-disabled="true"] { cursor: not-allowed; opacity: 0.7; }
+
+.scoreboard {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  color: var(--muted);
+}
+.scoreboard span { color: var(--text); font-weight: 700; }
